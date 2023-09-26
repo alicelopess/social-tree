@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Tree</title>
+
+    <!--Font Awesome Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Style File Link-->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--Poppins Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--The body tag has three direct children -> header, main and footer-->
+    <header>
+      <!--The header tag has one direct children -> topbar-->
+      <div class="topbar" id="topbar">
+        <div class="topbar-profile-picture" id="topbar-profile-picture">
+          <img
+            src="https://www.houndslounge.com/wp-content/uploads/2020/03/Happy-golden-retriever-at-Doggy-daycare.jpg"
+            alt="Profile Picture - Happy Golden Retriever"
+          />
+        </div>
+
+        <div class="topbar-profile-name" id="topbar-profile-name">
+          <p class="profile-name">@goldenzinho</p>
+        </div>
+
+        <div class="topbar-share-icon">
+          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--The main tag has two direct children -> profile info and profile links-->
+      <section class="profile-info">
+        <div class="profile-picture">
+          <img
+            src="https://www.houndslounge.com/wp-content/uploads/2020/03/Happy-golden-retriever-at-Doggy-daycare.jpg"
+            alt="Profile Picture - Happy Golden Retriever"
+          />
+        </div>
+
+        <div class="profile-name">
+          <h1 class="profile-name">@goldenzinho</h1>
+        </div>
+
+        <div class="profile-description">
+          <p class="profile-description">Woof!</p>
+        </div>
+      </section>
+
+      <section class="profile-links">
+        <a href="#" class="link">
+          <p>LINK 1</p>
+
+          <div class="link-share-btn">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
+        </a>
+
+        <a href="#" class="link">
+          <p>LINK 2</p>
+
+          <div class="link-share-btn">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
+        </a>
+
+        <a href="#" class="link">
+          <p>LINK 3</p>
+
+          <div class="link-share-btn">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
+        </a>
+
+        <a href="#" class="link">
+          <p>LINK 4</p>
+
+          <div class="link-share-btn">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
+        </a>
+
+        <a href="#" class="link">
+          <p>LINK 5</p>
+
+          <div class="link-share-btn">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
+        </a>
+
+        <a href="#" class="link">
+          <p>LINK 6</p>
+
+          <div class="link-share-btn">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
+        </a>
+
+        <a href="#" class="link">
+          <p>LINK 7</p>
+
+          <div class="link-share-btn">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
+        </a>
+
+        <a href="#" class="link">
+          <p>LINK 8</p>
+
+          <div class="link-share-btn">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
+        </a>
+
+        <!--
+        <div class="link">
+          <a href="#">
+            <div class="link-picture"></div>
+
+            <p>LINK 8</p>
+          </a>
+          <div class="link-share-btn"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+        </div>
+        -->
+      </section>
+    </main>
+
+    <footer>
+      <!--The footer tag has one direct children -> social links-->
+      <section class="social-links">
+        <div class="social-link">
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+
+        <div class="social-link">
+          <a href="#">
+            <i class="fa-brands fa-twitch"></i>
+          </a>
+        </div>
+
+        <div class="social-link">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+        <div class="social-link">
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <div class="social-link">
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+
+  <!--JavaScript-->
+  <script>
+    document.addEventListener('scroll', () => {
+      if (window.scrollY >= 80) {
+        document.getElementById('topbar').style.backgroundColor =
+          'rgba(255, 255, 255, 0.5)'
+        document.getElementById('topbar-profile-picture').style.visibility =
+          'visible'
+        document.getElementById('topbar-profile-name').style.visibility =
+          'visible'
+      } else {
+        document.getElementById('topbar').style.backgroundColor = 'transparent'
+        document.getElementById('topbar-profile-picture').style.visibility =
+          'hidden'
+        document.getElementById('topbar-profile-name').style.visibility =
+          'hidden'
+      }
+    })
+  </script>
+</html>
